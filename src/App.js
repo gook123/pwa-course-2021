@@ -1,20 +1,8 @@
-import { useState } from 'react';
+
 import './App.css';
+import {Link} from './Chatbox';
 
 function App() {
-  const[text, setText] = useState("");
-
-  const [lines, setLines] = useState(["Hello Gooky",]);
-
-
-  const onTextChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const onSend = () => {
-    setLines(lines => [...lines, text]);
-    setText("");
-  };
 
   return (
     <div className="App">
